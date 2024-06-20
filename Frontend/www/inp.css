@@ -1,0 +1,281 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff8dc; /* ніжно жовтий фон */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-left .badge {
+    background-color: #ffc107;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 1px;
+}
+
+.header-center p {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.header-right button {
+    background-color: #f90;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.discount-badge {
+    position: fixed;
+    bottom: 10px; /* Відступ від нижнього краю */
+    left: 10px;   /* Відступ від лівого краю */
+    background-color: #f90;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    width: 200px; /* Зміна ширини */
+    height: auto; /* Зміна висоти */
+    overflow: hidden; /* Приховування зайвого контенту */
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.pizza-list {
+    flex: 3;
+    text-align: center;
+}
+
+.pizza-list h2 {
+    margin: 0 0 20px;
+}
+
+.pizza-categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.pizza-categories button {
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.pizza-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Збільшений проміжок між піцами */
+    margin-left: 220px; /* Відступ зліва щоб уникнути накладення */
+}
+
+.pizza-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: calc(33.333% - 20px); /* Ширина для 3 піц у ряду */
+    box-sizing: border-box; /* Врахування відступів і рамок */
+}
+
+.pizza-item img {
+    width: 100%;
+}
+
+.pizza-details {
+    padding: 10px 0;
+}
+
+.pizza-details h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pizza-details .new, .pizza-details .popular {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.pizza-details .ingredients {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.pizza-details .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.order-summary {
+    flex: 1;
+    padding-left: 20px;
+    border-left: 1px solid #ccc;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.order-item img {
+    width: 50px;
+    height: auto;
+}
+
+.order-details {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.order-size-weight {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.order-price-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.order-controls {
+    display: flex;
+    align-items: center;
+}
+
+.order-controls button {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.order-controls .decrease {
+    background-color: red;
+    color: white;
+}
+
+.order-controls .increase {
+    background-color: green;
+    color: white;
+}
+
+.order-total {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-total button {
+    background-color: #f90;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.pizza-sizes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.pizza-sizes .size, .pizza-sizes .weight {
+    display: flex;
+    align-items: center;
+    font-size: 12px; /* Зменшення розміру шрифту */
+}
+
+.pizza-sizes .size-icon, .pizza-sizes .weight-icon {
+    width: 16px; /* Зменшення розміру іконок */
+    height: 16px;
+    margin-right: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* Адаптивні стилі */
+@media (min-width: 1200px) {
+    .pizza-item {
+        width: calc(33.333% - 20px); /* 3 піци у ряду */
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    .pizza-item {
+        width: calc(50% - 20px); /* 2 піци у ряду */
+    }
+}
+
+@media (max-width: 767px) {
+    main {
+        flex-direction: column;
+    }
+
+    .pizza-item {
+        width: 100%; /* 1 піца у ряду */
+    }
+
+    .order-summary {
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid #ccc;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-left, .header-center, .header-right {
+        text-align: center;
+    }
+
+    .header-right {
+        margin-top: 10px;
+    }
+
+    .pizza-categories {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .pizza-categories button {
+        padding: 5px 10px;
+    }
+}

@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "name": "Impreza",
+        "description": "Балик, салямі, куриця, сир моцарелла, сир рокфор, ананаси, томатна паста, петрушка",
+        "sizes": [
+            {"size": "30 см", "weight": "500 г", "price": 150},
+            {"size": "40 см", "weight": "750 г", "price": 200}
+        ],
+        "image": "assets/images/pizza_1.jpg",
+        "category": "М'ясні"
+    },
+    {
+        "id": 2,
+        "name": "Hawaiian",
+        "description": "Шинка, ананаси, сир моцарелла, томатний соус",
+        "sizes": [
+            {"size": "30 см", "weight": "450 г", "price": 130},
+            {"size": "40 см", "weight": "700 г", "price": 180}
+        ],
+        "image": "assets/images/pizza_2.jpg",
+        "category": "З ананасами"
+    },
+    {
+        "id": 3,
+        "name": "Pepperoni",
+        "description": "Пепероні, сир моцарелла, томатний соус",
+        "sizes": [
+            {"size": "30 см", "weight": "400 г", "price": 140},
+            {"size": "40 см", "weight": "600 г", "price": 190}
+        ],
+        "image": "assets/images/pizza_3.jpg",
+        "category": "М'ясні"
+    },
+    {
+        "id": 4,
+        "name": "Vegetarian",
+        "description": "Цибуля, перець, гриби, сир моцарелла, томатний соус",
+        "sizes": [
+            {"size": "30 см", "weight": "450 г", "price": 120},
+            {"size": "40 см", "weight": "650 г", "price": 170}
+        ],
+        "image": "assets/images/pizza_4.jpg",
+        "category": "Вега"
+    },
+    {
+        "id": 5,
+        "name": "Seafood",
+        "description": "Креветки, мідії, кальмари, сир моцарелла, томатний соус",
+        "sizes": [
+            {"size": "30 см", "weight": "500 г", "price": 180},
+            {"size": "40 см", "weight": "750 г", "price": 230}
+        ],
+        "image": "assets/images/pizza_5.jpg",
+        "category": "З морепродуктами"
+    },
+    {
+        "id": 6,
+        "name": "Mushroom",
+        "description": "Гриби, сир моцарелла, томатний соус",
+        "sizes": [
+            {"size": "30 см", "weight": "400 г", "price": 130},
+            {"size": "40 см", "weight": "600 г", "price": 180}
+        ],
+        "image": "assets/images/pizza_6.jpg",
+        "category": "З грибами"
+    },
+    {
+        "id": 7,
+        "name": "Mexican",
+        "description": "Цибуля, перець, кукурудза, куриця, сир моцарелла, томатний соус",
+        "sizes": [
+            {"size": "30 см", "weight": "450 г", "price": 160},
+            {"size": "40 см", "weight": "700 г", "price": 210}
+        ],
+        "image": "assets/images/pizza_7.jpg",
+        "category": "М'ясні"
+    },
+    {
+        "id": 8,
+        "name": "Pineapple Chicken",
+        "description": "Куриця, ананаси, сир моцарелла, томатний соус",
+        "sizes": [
+            {"size": "30 см", "weight": "450 г", "price": 150},
+            {"size": "40 см", "weight": "650 г", "price": 200}
+        ],
+        "image": "assets/images/pizza_8.jpg",
+        "category": "З ананасами"
+    },
+    {
+        "id": 9,
+        "name": "Four Cheese",
+        "description": "Сир моцарелла, сир пармезан, сир чеддер, сир дорблю, томатний соус",
+        "sizes": [
+            {"size": "30 см", "weight": "400 г", "price": 170},
+            {"size": "40 см", "weight": "600 г", "price": 220}
+        ],
+        "image": "assets/images/pizza_9.jpg",
+        "category": "Вега"
+    }
+]
